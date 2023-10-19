@@ -16,15 +16,23 @@ public class Producto {
     int tamanho;
 
 
-    public int getAño() {
+    public int getTamanho() {
+		return tamanho;
+	}
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+    
+    public int getAnho() {
         return anho;
     }
 
-    public void setAño(int anho) {
+    public void setAnho(int anho) {
         this.anho = anho;
     }
 
-    public int getSerialNumber() {
+	public int getSerialNumber() {
         return serialNumber;
     }
 

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 @Entity
 @Table(name="proveedor")
-public class Proveedor {
+public class ProveedorAcme {
 
     @Id
     @Column(name="rut_proveedor")

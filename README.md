@@ -21,7 +21,7 @@ Continuando con el mismo sistema de comercio electrónico, a los gerentes les pr
 2. Yo como cliente, me gustaría poder suscribirme o cancelar las notificaciones de estado del producto.  
 
 ***
-# Diagrama de Clases
+## Diagrama de Clases
 
 
 ![Diagrama de Clases!](1.png "Diagrama de Clases")
