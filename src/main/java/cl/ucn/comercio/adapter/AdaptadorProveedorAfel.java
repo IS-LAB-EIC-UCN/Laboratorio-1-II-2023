@@ -1,6 +1,9 @@
-package cl.ucn.comercio.modelo;
+package cl.ucn.comercio.adapter;
 
 import java.util.List;
+
+import cl.ucn.comercio.modelo.Producto;
+import cl.ucn.comercio.modelo.ProveedorAfel;
 
 public class AdaptadorProveedorAfel implements Adaptador {
 

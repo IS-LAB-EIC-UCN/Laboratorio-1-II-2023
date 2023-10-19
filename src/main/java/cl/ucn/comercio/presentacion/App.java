@@ -78,30 +78,30 @@ public class App
         logger.info("Se asocia el carro de compra al cliente. ");
         em.persist(carroCompra);
         cliente.setCarroCompra(carroCompra);
-        logger.info("Se crea una orden de compra y se confirma la compra ");
+        
+        
+        logger.info("Se crea una orden de compra");
         Orden orden = new Orden();
-        orden.setConfirmado(true);
+        orden.subscribe(cliente);
+        orden.setStatus(true,false,false);
         em.persist(orden);
         cliente.setOrden(orden);
-        logger.info("Se persisten los datos de cliente ");
         em.persist(cliente);
         tx.commit();
         Thread.sleep(2000);
 
-        logger.info("El status de la orden cambia a enviado ");
         cliente = em.find(Cliente.class,rut);
         orden = cliente.getOrden();
-        orden.setEnviado(true);
+        orden.setStatus(true, true, false);
         tx.begin();
         em.persist(orden);
         cliente.setOrden(orden);
         tx.commit();
         Thread.sleep(2000);
 
-        logger.info("El status de la orden cambia a entregado ");
         cliente = em.find(Cliente.class,rut);
         orden = cliente.getOrden();
-        orden.setEntregado(true);
+        orden.setStatus(true, true, true);
         tx.begin();
         em.persist(orden);
         cliente.setOrden(orden);

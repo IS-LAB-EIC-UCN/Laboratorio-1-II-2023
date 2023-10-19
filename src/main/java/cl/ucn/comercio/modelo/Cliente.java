@@ -2,9 +2,15 @@ package cl.ucn.comercio.modelo;
 
 import javax.persistence.*;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import cl.ucn.comercio.observer.Observador;
+import cl.ucn.comercio.observer.Sujeto;
+
 @Entity
 @Table(name="cliente")
-public class Cliente {
+public class Cliente implements Observador {
 
     @Id
     @Column(name = "rut")
@@ -20,6 +26,8 @@ public class Cliente {
     @JoinColumn(name = "orden_id", referencedColumnName = "orden_id")
     Orden orden;
 
+    private static Logger logger = LogManager.getLogger(Cliente.class);
+    
     public Cliente(){
 
     }
@@ -79,4 +87,11 @@ public class Cliente {
     public void setOrden(Orden orden) {
         this.orden = orden;
     }
+
+	@Override
+	public void update(Sujeto s) {
+		// TODO Auto-generated method stub
+		String orden = ((Orden) s).getStatus();
+		logger.info("El estado de la orden es: " + orden);
+	}
 }

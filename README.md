@@ -20,6 +20,9 @@ Continuando con el mismo sistema de comercio electrónico, a los gerentes les pr
 1. Yo como cliente, me gustaría recibir notificaciones cuando el pedido haya sido confirmado, enviado o entregado.
 2. Yo como cliente, me gustaría poder suscribirme o cancelar las notificaciones de estado del producto.  
 
+
+**Respuesta:** Se debe implementar el patrón Observer. Permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando. En este caso en particular, el cliente podrá subscribirse a las notificaciones del estado de un producto comprado.
+
 ***
 ## Diagrama de Clases
 

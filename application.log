@@ -1,0 +1,14 @@
+16:35:37.734 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente: Randal Thomas con rut 29916399 comienza la compra.
+16:35:39.736 [main] INFO  cl.ucn.comercio.presentacion.App - El cliente ha escogido los siguientes productos: 
+16:35:39.785 [main] INFO  cl.ucn.comercio.presentacion.App - Celulares con marca: apple y oppo
+16:35:41.785 [main] INFO  cl.ucn.comercio.presentacion.App - Verificamos la lista de proveedores y a quien pertenecen los productos escogidos: 
+16:35:41.794 [main] INFO  cl.ucn.comercio.presentacion.App - Nombre: ACME Rut: 739872042
+16:35:41.797 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 1 es ACME
+16:35:41.798 [main] INFO  cl.ucn.comercio.presentacion.App - El proveedor para producto 2 es ACME
+16:35:43.798 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea el carro de compras con los productos escogidos. 
+16:35:43.799 [main] INFO  cl.ucn.comercio.presentacion.App - Fecha: 19/10/2023 16:35:43
+16:35:43.802 [main] INFO  cl.ucn.comercio.presentacion.App - Se asocia el carro de compra al cliente. 
+16:35:43.820 [main] INFO  cl.ucn.comercio.presentacion.App - Se crea una orden de compra
+16:35:43.820 [main] INFO  cl.ucn.comercio.modelo.Cliente - El estado de la orden es: confirmado
+16:35:45.843 [main] INFO  cl.ucn.comercio.modelo.Cliente - El estado de la orden es: enviado
+16:35:47.858 [main] INFO  cl.ucn.comercio.modelo.Cliente - El estado de la orden es: entregado
